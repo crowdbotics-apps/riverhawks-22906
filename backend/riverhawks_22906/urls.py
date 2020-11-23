@@ -33,6 +33,8 @@ urlpatterns = [
     path("api/v1/", include("healthcare.api.v1.urls")),
     path("healthcare/", include("healthcare.urls")),
     path("home/", include("home.urls")),
+    path("api/v1/", include("event.api.v1.urls")),
+    path("event/", include("event.urls")),
 ]
 
 admin.site.site_header = "Riverhawks"
